@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AddToCard</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <div class="logo-menu">
+                    <div class="logo">
+                        <h1>SVD</h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>home</li>
+                            <li>About</li>
+                            <li>gallery</li>
+                            <li>Product</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <p><i class="fa-solid fa-cart-shopping"></i><span id='card-num'>0</span></p>
+                    <p id="profile"><img src='logo.png' alt='profile'/></p>
+                </div>
+            </header>
+            <div class="card-details">
+                <div class="left-details">
+                    <div class="banner">
+                        <div class="img">
+                            <img id='banner-img' src="1.jpg" alt="">
+                        </div>
+                    </div>
+                    <ul class="img-list">
+                    
+                    </ul>
+                </div>
+                <div class="right-details">
+                   <div class="box">
+                    <p id="title">Product Name</p>
+                    <h2>OnlineCoders </h2>
+                    <p id="discription">This channel will be give kind of UI/UX base design to learn using  html,css,javascript beginner level tutorial things...please support</p>
+                    <div class="price">
+                        <p id="offer"><span id="of-price">$125</span><span>50%</span></p>
+                        <p id="original-price">250$</p>
+                    </div>
+                    <div class="add">
+                        <div class="buttons">
+                            <button onclick="decrement()">-</button>
+                            <button id="card-value">0</button>
+                            <button onclick="increment()">+</button>
+                        </div>
+                        <button id="btn">AddToCard</button>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
